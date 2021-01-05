@@ -1,4 +1,4 @@
-package com.panaceasoft.fluttermulticity;
+package com.panaceasoft.lehwalk;
 
 import io.flutter.embedding.android.FlutterActivity;
 

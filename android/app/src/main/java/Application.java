@@ -1,4 +1,4 @@
-package com.panaceasoft.fluttermulticity;
+package com.panaceasoft.lehwalk;
 
  import io.flutter.app.FlutterApplication;
  import io.flutter.plugin.common.PluginRegistry;
