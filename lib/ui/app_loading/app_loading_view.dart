@@ -295,10 +295,10 @@ class AppLoadingView extends StatelessWidget {
                           height: PsDimens.space16,
                         ),
                         Text(
-                          Utils.getString(context, 'app_name'),
+                          Utils.getString(context, 'Let\'s Explore'),
                           style: Theme.of(context).textTheme.headline6.copyWith(
                               fontWeight: FontWeight.bold,
-                              color: PsColors.white),
+                              color: PsColors.mainColor),
                         ),
                         const SizedBox(
                           height: PsDimens.space8,

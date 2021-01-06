@@ -75,29 +75,33 @@ class _PhoneSignInViewState extends State<PhoneSignInView>
               SingleChildScrollView(
                   child: AnimatedBuilder(
                       animation: animationController,
-                      child: Column(
-                        mainAxisSize: MainAxisSize.max,
-                        children: <Widget>[
-                          _HeaderIconAndTextWidget(),
-                          _CardWidget(
-                            nameController: nameController,
-                            phoneController: phoneController,
-                          ),
-                          const SizedBox(
-                            height: PsDimens.space8,
-                          ),
-                          _SendButtonWidget(
-                            provider: provider,
-                            nameController: nameController,
-                            phoneController: phoneController,
-                            phoneSignInSelected: widget.phoneSignInSelected,
-                          ),
-                          const SizedBox(
-                            height: PsDimens.space16,
-                          ),
-                          _TextWidget(
-                              goToLoginSelected: widget.goToLoginSelected),
-                        ],
+                      child: Container(
+                        height: MediaQuery.of(context).size.height,
+                        color: PsColors.white,
+                        child: Column(
+                          mainAxisSize: MainAxisSize.max,
+                          children: <Widget>[
+                            _HeaderIconAndTextWidget(),
+                            _CardWidget(
+                              nameController: nameController,
+                              phoneController: phoneController,
+                            ),
+                            const SizedBox(
+                              height: PsDimens.space8,
+                            ),
+                            _SendButtonWidget(
+                              provider: provider,
+                              nameController: nameController,
+                              phoneController: phoneController,
+                              phoneSignInSelected: widget.phoneSignInSelected,
+                            ),
+                            const SizedBox(
+                              height: PsDimens.space16,
+                            ),
+                            _TextWidget(
+                                goToLoginSelected: widget.goToLoginSelected),
+                          ],
+                        ),
                       ),
                       builder: (BuildContext context, Widget child) {
                         return FadeTransition(
